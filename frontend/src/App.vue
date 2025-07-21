@@ -1,23 +1,26 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Layout from './components/Layout.vue'
 </script>
 
 <template>
-  
-  <HelloWorld  />
+  <Layout />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+/* 全局样式，确保全屏显示 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+html, body {
+  height: 100%;
+  overflow: hidden;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+#app {
+  height: 100vh;
+  width: 100vw;
 }
 </style>
